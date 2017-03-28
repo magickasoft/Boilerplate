@@ -12,6 +12,10 @@ import {
   View
 } from 'react-native';
 
+import {
+    Button
+} from 'react-native-elements'
+
 export default class Boilerplate extends Component {
   render() {
     return (
@@ -26,6 +30,10 @@ export default class Boilerplate extends Component {
           Double tap R on your keyboard to reload,{'\n'}
           Shake or press menu button for dev menu
         </Text>
+        <Button
+            raised
+            icon={{name: 'voice-chat'}}
+            title='RAISED WITH ICON' />
       </View>
     );
   }
