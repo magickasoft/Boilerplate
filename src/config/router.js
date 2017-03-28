@@ -14,19 +14,22 @@ export const FeedStack = StackNavigator({
       title: 'Feed',
     },
   },
-  Details: {
-    screen: UserDetail,
-    navigationOptions: {
-      title: ({ state }) => `${state.params.name.first.toUpperCase()} ${state.params.name.last.toUpperCase()}`
-    },
-  },
+  // Details: {
+  //   screen: UserDetail,
+  //   navigationOptions: {
+  //     title: ({ state }) => `${state.params.name.first.toUpperCase()} ${state.params.name.last.toUpperCase()}`
+  //   },
+  // },
+}, {
+    mode: 'modal',
+    headerMode: 'none',
 });
 
 export const Tabs = TabNavigator({
   Feed: {
     screen: FeedStack,
     navigationOptions: {
-      tabBar: {
+        tabBar: {
         label: 'Feed',
         icon: ({ tintColor }) => <Icon name="list" size={35} color={tintColor} />
       },
@@ -35,7 +38,8 @@ export const Tabs = TabNavigator({
   Me: {
     screen: Me,
     navigationOptions: {
-      tabBar: {
+      title: 'MEE',
+        tabBar: {
         label: 'Me',
         icon: ({ tintColor }) => <Icon name="account-circle" size={35} color={tintColor} />
       },
@@ -50,7 +54,26 @@ export const SettingsStack = StackNavigator({
       title: 'Settings',
     },
   },
+}, {
+    mode: 'modal',
+    headerMode: 'none',
 });
+
+export const DetailsStack = StackNavigator({
+    Details: {
+        screen: UserDetail,
+        navigationOptions: {
+            cardStack: {
+                gesturesEnabled: true,
+            },
+            title: ({ state }) => `${state.params.name.first.toUpperCase()} ${state.params.name.last.toUpperCase()}`
+        },
+    },
+}, {
+    mode: 'card',
+    headerMode: 'none',
+});
+
 
 export const Root = StackNavigator({
   Tabs: {
@@ -59,7 +82,10 @@ export const Root = StackNavigator({
   Settings: {
     screen: SettingsStack,
   },
+  Details: {
+    screen: DetailsStack,
+  },
 }, {
-  mode: 'modal',
-  headerMode: 'none',
+  // mode: 'modal',
+  // headerMode: 'none',
 });
