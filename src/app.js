@@ -54,8 +54,8 @@ class App extends React.Component {
 
 const stateToProps = (state) => {
 
-    const { autoRehydrated, netinfo, nav } = state;
-    return { autoRehydrated, netinfo, nav };
+    const { autoRehydrated, netinfo } = state;
+    return { autoRehydrated, netinfo };
 };
 
 const dispatchToProps = (dispatch) => {

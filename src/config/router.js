@@ -1,10 +1,12 @@
 import React from 'react';
-import { TabNavigator, StackNavigator } from 'react-navigation';
+import { TabNavigator, StackNavigator, DrawerNavigator } from 'react-navigation';
 import { Icon } from 'react-native-elements';
 
-import Feed from '../screens/Feed';
+// import Feed from '../screens/Feed';
+import Feed from '../containers/FeedUsersContainer';
 import Settings from '../screens/Settings';
-import UserDetail from '../screens/UserDetail';
+// import UserDetail from '../screens/UserDetail';
+import UserDetail from '../containers/UserDetailContainer';
 import Me from '../screens/Me';
 
 export const FeedStack = StackNavigator({
@@ -66,7 +68,7 @@ export const DetailsStack = StackNavigator({
             cardStack: {
                 gesturesEnabled: true,
             },
-            title: ({ state }) => `${state.params.name.first.toUpperCase()} ${state.params.name.last.toUpperCase()}`
+            //title: ({ state }) => `${state.params.firstname.toUpperCase()} ${state.params.lastname.toUpperCase()}`
         },
     },
 }, {
