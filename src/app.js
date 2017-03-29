@@ -5,6 +5,9 @@ import {
     View,
     Text,
 } from 'react-native';
+import {
+    addNavigationHelpers,
+} from 'react-navigation';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import _ from 'lodash';
@@ -42,7 +45,7 @@ class App extends React.Component {
         if (!autoRehydrated) {
             return (<View></View>)
         }
-        // console.log('~~~~App props', this.props);
+//        console.log('~~~~App props', this.props);
         return (
             <Root />
         )
@@ -51,8 +54,8 @@ class App extends React.Component {
 
 const stateToProps = (state) => {
 
-    const { autoRehydrated, netinfo } = state;
-    return { autoRehydrated, netinfo };
+    const { autoRehydrated, netinfo, nav } = state;
+    return { autoRehydrated, netinfo, nav };
 };
 
 const dispatchToProps = (dispatch) => {
