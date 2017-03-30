@@ -6,6 +6,7 @@ import {
 } from 'react-native';
 import { List, ListItem } from 'react-native-elements';
 import { users } from '../config/data';
+// import { users } from '../config/big_data';
 
 class Feed extends Component {
   onLearnMore = (user) => {

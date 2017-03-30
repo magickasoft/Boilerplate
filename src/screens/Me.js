@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { ScrollView } from 'react-native';
 import { Tile, List, ListItem, Button } from 'react-native-elements';
-import { me } from '../config/data';
+// import { me } from '../config/data';
+import { me } from '../config/big_data';
 
 class UserDetail extends Component {
   handleSettingsPress = () => {
