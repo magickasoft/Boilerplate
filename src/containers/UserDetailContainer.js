@@ -29,4 +29,5 @@ function dispatchToProps(dispatch) {
     return bindActionCreators(actions, dispatch)
 }
 
-export default connect(stateToProps, dispatchToProps)(UserDetailGraphQl)
+// export default connect(stateToProps, dispatchToProps)(UserDetailGraphQl)
+export default UserDetailGraphQl;

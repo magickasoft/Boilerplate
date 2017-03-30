@@ -26,4 +26,5 @@ function dispatchToProps(dispatch) {
     return bindActionCreators(actions, dispatch)
 }
 
-export default connect(stateToProps, dispatchToProps)(First_tabGraphQl)
+// export default connect(stateToProps, dispatchToProps)(First_tabGraphQl)
+export default First_tabGraphQl;

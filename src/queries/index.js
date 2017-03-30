@@ -4,7 +4,7 @@ import gql from 'graphql-tag'
 
 export const allUsers = gql`
     query allUsers {
-        users {
+        users(limit: 50) {
             uid
             name
             fullname
