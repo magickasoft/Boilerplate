@@ -3040,6 +3040,10 @@ react-native-elements@^0.10.2:
     react-native-side-menu "^0.20.1"
     react-native-tab-navigator "^0.3.3"
 
+react-native-gifted-spinner@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/react-native-gifted-spinner/-/react-native-gifted-spinner-0.1.0.tgz#2c76094fa0469c59e96dead270cd5bca5a55962a"
+
 react-native-parsed-text@^0.0.17:
   version "0.0.17"
   resolved "https://registry.yarnpkg.com/react-native-parsed-text/-/react-native-parsed-text-0.0.17.tgz#a6edfc9729e0917a2613c3f5bdf0c685f8ebcd81"

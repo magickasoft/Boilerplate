@@ -6,6 +6,7 @@ import {
   ScrollView
 } from 'react-native';
 import { List, ListItem, Button } from 'react-native-elements';
+import GiftedSpinner from 'react-native-gifted-spinner';
 
 class Feed extends Component {
   onLearnMore = (user) => {
@@ -29,7 +30,7 @@ class Feed extends Component {
             title='Update data' />
         <List>
 
-            { data ? data.loading ? <Text >{'Loading'}</Text>
+            { data ? data.loading ? <GiftedSpinner />
                 :
                 data.users ?
                     data.users.map(user => (

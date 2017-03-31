@@ -5,6 +5,7 @@ import {
   ScrollView,
 } from 'react-native';
 import { Tile, List, ListItem } from 'react-native-elements';
+import GiftedSpinner from 'react-native-gifted-spinner';
 
 class UserDetail extends Component {
   renderUserInfo(user){
@@ -58,7 +59,7 @@ class UserDetail extends Component {
 
     return (
       <ScrollView>
-          { data ? data.loading ? <Text>{'Loading'}</Text>
+          { data ? data.loading ? <GiftedSpinner />
               :
               data.user ? this.renderUserInfo(data.user) : <Text>{'None User'}</Text>
               : <Text>{'None data'}</Text>
