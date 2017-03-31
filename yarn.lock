@@ -3044,6 +3044,10 @@ react-native-gifted-spinner@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/react-native-gifted-spinner/-/react-native-gifted-spinner-0.1.0.tgz#2c76094fa0469c59e96dead270cd5bca5a55962a"
 
+react-native-loading-spinner-overlay@^0.4.2:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/react-native-loading-spinner-overlay/-/react-native-loading-spinner-overlay-0.4.2.tgz#a906d781a0fcecf793491d800d2f5b3eeadf7c3b"
+
 react-native-parsed-text@^0.0.17:
   version "0.0.17"
   resolved "https://registry.yarnpkg.com/react-native-parsed-text/-/react-native-parsed-text-0.0.17.tgz#a6edfc9729e0917a2613c3f5bdf0c685f8ebcd81"

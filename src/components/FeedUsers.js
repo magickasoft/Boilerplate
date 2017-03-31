@@ -7,8 +7,14 @@ import {
 } from 'react-native';
 import { List, ListItem, Button } from 'react-native-elements';
 import GiftedSpinner from 'react-native-gifted-spinner';
+import Spinner from 'react-native-loading-spinner-overlay';
 
-class Feed extends Component {
+class Feed extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+    };
+  }
   onLearnMore = (user) => {
     // this.props.navigation.navigate('Details', { ...user });
       this.props.navigation.navigate('Details', { uid: user.uid });
@@ -30,7 +36,9 @@ class Feed extends Component {
             title='Update data' />
         <List>
 
-            { data ? data.loading ? <GiftedSpinner />
+            { data ? data.loading ?
+                <GiftedSpinner />
+                /*<Spinner visible={data.loading}/>*/
                 :
                 data.users ?
                     data.users.map(user => (
